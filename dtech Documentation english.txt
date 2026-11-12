@@ -1,4 +1,4 @@
-DISCLAIRMER i translated this from spanish to english using chatGPT
+DISCLAIRMER i translated this from spanish to english using chatGPT AND this documentation can be translated after the spanish version so pls dont use this doc
 .dtech and .dteche are used to distinguish between source code and executable files when creating a file (the "e" in .dteche stands for executable).
 
 <type:dtech: This is the header. Without it, the code will not work. You can set it to executable or code. Use executable for executable files and code for source code.>
