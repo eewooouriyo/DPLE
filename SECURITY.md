@@ -6,7 +6,7 @@
 | Version | Supported          |
 | ------- | ------------------ |
 | b003    | :white_check_mark: |
-| b002    | :white_check_mark: |
+| b002    | :x:                |
 | b001    | :x:                |
 | b000    | :x:                |
 
