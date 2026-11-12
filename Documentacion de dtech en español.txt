@@ -1,7 +1,7 @@
-.dtech y .dteche sirven para diferenciar entre codigo y ejecutables cuando se crea un archivo (la e en .dteche SIGNIFICA ejecutable)
+.dple es la extension para archivos
 
 
-<type:dtech: el encabezado sin esto el codigo no servira ademas puedes ponerle como ejecutable o codigo para ejecutable usa executable> y para codigo usa code>
+<type:dtech:code> el encabezado sin esto el codigo no servira
 
 
 @command comando puede servir para varias cosas
@@ -11,6 +11,7 @@ comandos:
 (subcomandos de .start.server:
 .port."número" establece el puerto en el que escuchará el servidor (default: 1)
 .max.joins=="número" establece el máximo de IPs/conexiones permitidas simultáneamente (default: 10)
+.IP:"IP" aca pones la IP en la que quieras (default: tu ip))
 
 El servidor muestra:
 - Server logs: registro de todas las conexiones entrantes
@@ -25,9 +26,12 @@ network.connect en tu codigo)
 
 @command.get sirve para obtener un comando 
 (subcomandos de .get: 
-create crea una variable o objeto, la variable debe ser especificada con int, string, bool o float ejemplo @command.get.create.variable.int.#health el objeto debe ser especificado con una forma formas: ball (Circulo) cube (cuadrado)
-input consigue el input que se este poniendo del teclado
-input.mouse consigue el imput del mouse
+create crea una variable, la variable debe ser especificada con int, string, bool o float 
+ejemplo: 
+@command.get.create.variable.int.#health 
+
+@@input consigue el input que se este poniendo del teclado
+@@input.mouse consigue el imput del mouse
 
 @command.affiliate.(simbolo).to# sirve para afiliar un simbolo a una variable
 
@@ -58,6 +62,8 @@ array. una lista que puede ser int, bool, string o float
 comandos de array.: get.(nombre de la lista).print consigue la lista y la imprime
 rename.(nombre) renombra una lista al nombre que quieras
 add añade una lista
+(subcomandos de array.add
+."tipo"."nombre")
 remove.(nombre) 
 
 file.(ruta). abre y mira o usa un archivo se debe especificar la ubicacion
@@ -79,11 +85,11 @@ import importa algo que te sea util
 imports: (no hay XD)
 
 
-if un si X cosa es,ase o usa Y cosa ejemplo if.#life.using.#health.set.#health.to.0
+if  si X cosa es,ase o usa Ye cosa ejemplo if.#life.using.#health.set.#health.to.0
 else si no se logran los requerimientos del if entonces aser esto otro else.set.#health.to.100
 elseif si la condicion anterior no pasa entonces evalua una nueva condicion
 
-while mientras que X cosa use o sea Y cosa pasa Z cosa
+while("condicion").then  mientras que X cosa use o sea Y cosa pasa Z cosa
 
 function una funcion crea tu propia funcion ejemplo function.heal y despues puedes hacer heal()
 
@@ -94,7 +100,9 @@ function una funcion crea tu propia funcion ejemplo function.heal y despues pued
 * multiplicar
 
 
-== igual a
+== igual a (asignacion)
+
+= igual a (si es igual a )
  
 
 + sumar
@@ -144,11 +152,6 @@ print.line.(tiempo de espera) te deja poner palabras letra por letra ejemplo: pr
 
 
 
-draw.(radio).(figura) o draw.(figura).(radio) te deja dibujar figuras geometricas
-figuras:
-square (cuadrado)
-triangle (triangulo)
-circle (circulo)
 
 
 end termina el codigo
@@ -184,10 +187,9 @@ set pon algo (texto o numero) en x cosa
 % pon numero en x porcentage
 
 
-use dejar que X variable use Y variable
-
-
 $ pon algo (texto o numero) en X variable (funciona si lo has afiliado a una variable ejemplo: @command.affiliate.$.to.#money salida -> $(el numero que le hayas puesto con set)solo sirve para printear y de lectura para cambiar el valor se usa #(nombre de la variable))
 
 
-. es practicamente un (" ") (espacio) que se debe usar siempre que necesites un espacio ejemplos bueno: @command.get.create.variable.#test malo: @command get create variable #test
+. es practicamente un (" ") (espacio) que se debe usar siempre que necesites un espacio ejemplos: 
+bueno: @command.get.create.variable.#test 
+malo: @command get create variable #test
